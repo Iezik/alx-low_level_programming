@@ -1,4 +1,4 @@
-#include <std.h>
+#include <stdio.h>
 /**
  * main - prints the sizes of various data types
  * Return: 0 if exited properly, else is not 0
