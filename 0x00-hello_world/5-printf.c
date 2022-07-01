@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints with proper grammar,
- * but the outcome is a piece of art,
- * Return: 0 if exited properly, else not 0
+ * main - prints with proper grammar, but the outcome is a piece of art,
+ * Return: 0 if exited properly, else not zero
  */
 int main(void)
 {
