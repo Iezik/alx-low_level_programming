@@ -13,18 +13,18 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		probe = 1;
+		test = 1;
 		_putchar('+');
 	}
 	else if (n == 0)
 	{
-		probe = 0;
+		test = 0;
 		_putchar('0');
 	}
 	else
 	{
-		probe = -1;
+		test = -1;
 		_putchar('-');
 	}
-	return (probe);
+	return (test);
 }
