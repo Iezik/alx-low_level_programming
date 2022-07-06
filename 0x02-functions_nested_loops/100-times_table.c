@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - prints the times table from 0 to N
- * @n : times table to stop at
+ * times_table - prints the times table from 0 to 9
  * Return: void
  */
 
@@ -12,11 +11,12 @@ void times_table(int n)
 	int b;
 	int rep;
 
-	while (a <= n)
+	while (a <= 9)
 	{
-		for (b = 0; b <= n; b++)
+		b = 0;
+		while (b <= 9)
 		{
-			rep = a * b;
+		rep = a * b;
 		if (b == 0)
 		{
 			_putchar('0' + rep);
@@ -24,18 +24,11 @@ void times_table(int n)
 		else if (rep < 10)
 		{
 			_putchar(' ');
-			_putchar(' ');
 			_putchar('0' + rep);
 		}
-		else if (rep < 100)
-		{
-			_putchar(' ');
-			_putchar('0' + rep / 10);
-			_putchar('0' + rep % 10);
 		else
 		{
-			_putchar('0' + rep /  100);
-			_putchar('0' + (rep -  100) / 10);
+			_putchar('0' + rep / 10);
 			_putchar('0' + rep % 10);
 		}
 
@@ -44,6 +37,7 @@ void times_table(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+		b++;
 	}
 	_putchar('\n');
 	a++;
