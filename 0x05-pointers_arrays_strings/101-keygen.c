@@ -11,29 +11,15 @@
 
 int main(void)
 {
-	int ascii = 2772, i = 0, j, random;
-	char password[100];
-	time_t t;
+        srand(time(NULL));
+        int rando = rand();
 
-	srand((int) time(&t));
-	while (ascii > 126)
-	{
-		random = rand() % 126;
-		password[i] = random;
-		ascii -= random;
-		i++;
-	}
-	if (ascii > 0)
-		password[i] = ascii;
-	else
-	{
-		i--;
-	}
-	
-
-	for (j = 0; j <= i; j++)
-	{
-		printf("%c", password[j]);
-	}
-	return (0);
+        /**
+         * The following code shortens the length of the generated number to a
+         * desired length by reducing the numerica value
+         */
+        int maxvalue = 25;
+        /** The modulus operator becomes pretty handy here */
+        printf("%i\n", rando % (maxvalue + 1));
+        return (0);
 }
