@@ -11,15 +11,17 @@
 
 int main(void)
 {
-        srand(time(NULL));
-        int rando = rand();
+	int rando;
+	int maxvalue = 25;
 
-        /**
-         * The following code shortens the length of the generated number to a
-         * desired length by reducing the numerica value
-         */
-        int maxvalue = 25;
-        /** The modulus operator becomes pretty handy here */
-        printf("%i\n", rando % (maxvalue + 1));
-        return (0);
+	srand(time(NULL));
+	rando = rand();
+
+/**
+ * The following code shortens the length of the generated number to a
+ * desired length by reducing the numerica value
+ * The modulus operator becomes pretty handy here 
+ */
+	printf("%i\n", rando % (maxvalue + 1));
+	return (0);
 }
