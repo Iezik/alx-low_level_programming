@@ -12,7 +12,7 @@
 int main(void)
 {
 	int rando;
-	int maxvalue = 25;
+	int maxvalue = 7000;
 
 	srand(time(NULL));
 	rando = rand();
