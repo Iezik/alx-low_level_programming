@@ -7,15 +7,6 @@
  * Return: pointer to matching char
  */
 
-#include "main.h"
-
-/**
- * _strpbrk - finds first matching char in string
- * @s: input string for matching char
- * @accept: characters matching
- * Return: pointer to matching char
- */
-
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
