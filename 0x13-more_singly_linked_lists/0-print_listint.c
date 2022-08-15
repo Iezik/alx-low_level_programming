@@ -12,12 +12,12 @@
 size_t print_listint(const listint_t *h)
 {
 	//ptr is a pointer we will use to run traverse, print, and count the linked list
-	size_t *ptr;
-	ptr = malloc(sizeof(size_t));
+	const listint_t *ptr;
+	ptr = malloc(sizeof(const listint_t));
 	ptr = h;
 	
 	//count is used to store the number of nodes in the linked list
-	int count = 0;
+	size_t count = 0;
 
 	while (ptr->next != '\0')
 	{
