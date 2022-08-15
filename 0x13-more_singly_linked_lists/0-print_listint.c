@@ -19,7 +19,7 @@ size_t print_listint(const listint_t *h)
 	//count is used to store the number of nodes in the linked list
 	size_t count = 0;
 
-	while (ptr->next != '\0')
+	while (ptr->next != NULL)
 	{
 		printf("%d\n", ptr->n);
 		count++;
