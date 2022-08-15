@@ -21,17 +21,10 @@ size_t print_listint(const listint_t *h)
 
 	while (ptr->next != '\0')
 	{
-		//str is the variable containing a string
-		if (ptr->n == NULL)
-		{
-			printf("(nil)\n");
-		}
-		else
-		{
-			printf("%d\n", ptr->n);
-		}
+		printf("%d\n", ptr->n);
 		count++;
 		ptr = ptr->next;
 	}
+	free(ptr);
 return(count);
 }
