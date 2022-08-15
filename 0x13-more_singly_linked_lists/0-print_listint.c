@@ -22,13 +22,13 @@ size_t print_listint(const listint_t *h)
 	while (ptr->next != '\0')
 	{
 		//str is the variable containing a string
-		if (ptr->str == NULL)
+		if (ptr->n == NULL)
 		{
 			printf("(nil)\n");
 		}
 		else
 		{
-			printf("%s", ptr->str);
+			printf("%d", ptr->n);
 		}
 		count++;
 		ptr = ptr->next;
