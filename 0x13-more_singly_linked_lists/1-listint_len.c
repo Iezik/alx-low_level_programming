@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "lists.h"
+#include"lists.h"
+#include"stdio.h"
 /**
  *listint_len - return length of element
  *
@@ -10,14 +10,11 @@
 
 size_t listint_len(const listint_t *h)
 {
-	size_t count = 0;
-	const listint_t *ptr = h;
-
-	while (ptr != NULL)
-	{
-		count++;
-		ptr = ptr->next;
-	}
-	return(count);
+size_t i = 0;
+while (h)
+{
+h = h->next;
+i++;
 }
-
+return (i);
+}
