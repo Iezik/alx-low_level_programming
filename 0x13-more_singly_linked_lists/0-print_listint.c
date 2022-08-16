@@ -10,15 +10,15 @@
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *ptr = h;
-	size_t count = 0;
+	size_t nbr_nodes = 0;
+	const listint_t *current = h;
 
-	while (ptr != NULL)
+	while (current != NULL)
 	{
-		printf("%d\n", ptr->n);
-		ptr = ptr->next;
-		count++;
+		printf("%i\n", current->n);
+		current = current->next;
+		nbr_nodes++;
 	}
-	return (count);
+	return (nbr_nodes);
 }
 
